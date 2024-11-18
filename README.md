@@ -1,4 +1,4 @@
-Melanoma Detection using Custom Convolutional Neural Network
+Melanoma Detection using Custom Convolutional Neural Network   
 Building a multiclass classification model to detect melanoma from skin images.
 
 Table of Contents 
