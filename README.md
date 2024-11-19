@@ -2,7 +2,8 @@ Melanoma Detection using Custom Convolutional Neural Network
 Building a multiclass classification model to detect melanoma from skin images.
 
 Table of Contents 
-General Information
+
+**General Information**
 This project aims to build a custom convolutional neural network in TensorFlow to detect melanoma, a deadly type of skin cancer.    
 Background:  Manual examination of skin images by dermatologists is time-consuming. Automated detection can reduce manual effort.     
 Business Problem:  Develop an accurate multiclass classification model to detect melanoma from skin images.     
