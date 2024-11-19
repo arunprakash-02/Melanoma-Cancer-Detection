@@ -10,16 +10,27 @@ Dataset:  2357 images from the International Skin Imaging Collaboration (ISIC), 
 
 Conclusions    
 Conclusion 1:    
-The training accuracy continues to improve steadily, reaching close to 0.7, while the validation accuracy plateaus around 0.5–0.6 and fluctuates.
-This gap between training and validation accuracy indicates overfitting; the model is performing well on the training data but not generalizing as well on the validation data.
+1.Training Performance: The training accuracy steadily improves, nearing 1.0, while the training loss reduces significantly, indicating the model is learning well on the training data.
 
+2.Validation Performance: Validation accuracy follows the trend of training accuracy but fluctuates after epoch 10, suggesting overfitting might begin. The validation loss also shows spikes after epoch 10.
+
+3. Overfitting Signs: The divergence between training and validation metrics after epoch 10 implies overfitting. Consider regularization, dropout, or early stopping to address this issue.
 Conclusion 2:  
-Training accuracy improves steadily over epochs. 
-Validation accuracy shows fluctuations but generally follows the trend of training accuracy. 
-This suggests the model is learning but might be slightly overfitting, as the validation accuracy is less stable. 
-Training loss decreases consistently, indicating proper optimization. Validation loss also decreases but shows fluctuations, suggesting potential overfitting    
+1.Training Performance: Training accuracy improves consistently, nearing 0.8, while training loss decreases steadily, showing the model is learning effectively.
+
+2. Validation Performance: Validation accuracy tracks closely with training accuracy, with minor fluctuations, and validation loss decreases alongside training loss, indicating no severe overfitting.
+
+3. Model Robustness: The close alignment of validation and training metrics suggests good generalization. The minor spikes in validation loss could reflect variability, which might benefit from techniques like cross-validation.
+
+   
 Conclusion 3:   With data augmentation added, show that the validation loss is still rising and fluctuating, while validation accuracy remains relatively flat. 
 This indicates that although augmentation is adding some variety, it hasn’t fully resolved the overfitting or the model's inability to generalize well on validation data.
+
+1.Training Performance: Training accuracy rapidly improves and stabilizes above 0.9, while training loss significantly decreases, indicating strong performance on training data.
+
+2.Validation Performance: Validation accuracy closely follows training accuracy, stabilizing slightly below 0.9. Validation loss decreases but exhibits spikes toward the later epochs, suggesting some noise or mild overfitting.
+
+3. Model Robustness: The close alignment of training and validation accuracy indicates good generalization. However, the validation loss spikes may benefit from techniques such as learning rate scheduling or early stopping.
 
 Technologies Used  
 
